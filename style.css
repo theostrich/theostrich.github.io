@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  size: 10%;
+}
+
+nav p {
+  font-size: 150%;
+  font-family: Belanosima;
+  position: relative;
+}
+
+nav p::after {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #deeb25;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav p:hover::after {
+  transform: scaleX(1);
+}
+
+.banner {
+  size: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.banner p {
+  white-space: nowrap;
+  position: relative;
+  font-family: Belanosima;
+  padding-top: 25%;
+  padding-left: 15%;
+  font-size: 700%;
+}
+
+.banner #ostrich_pic {
+  position: relative;
+  padding-top: 5%;
+  padding-left: 20%;
+  height: 90vh;
+  z-index: 1;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+}
+
+.next #line {
+  position: absolute;
+  top: 85vh;
+  z-index: -1;
+}
+
+#texture1 {
+  position: absolute;
+  top: 60vh;
+  width: 30vh;
+  z-index: -1;
+}
+
+#texture2 {
+  position: absolute;
+  top: 30vh;
+  width: 30vh;
+  left: 50vh;
+  z-index: -1;
+}
+
+
+/* #texture3 {
+    position: absolute;
+    top: 60vh;
+    width: 30vh;
+    left: 60%;
+    z-index: -1;
+} */
+.complements {
+  size: 100vh;
+  display: flex;
+}
+
+.complements #texture4 {
+  height: 100vh;
+}
+
+#comptitle {
+  font-family: 'Caveat', cursive;
+  position: absolute;
+  bottom: -15vh;
+  right: 40vh;
+  font-size: 5vh;
+}
+
+#texture5 {
+  position: absolute;
+  bottom: -25vh;
+  right: 15vh;
+  height: 20vh;
+}
+
+.telegram_msg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding-right: 20%;
+  padding-top: 30vh;
+  height: 100vh;
+  width: 100vh;
+  object-fit: cover;
+
+}
+
+.telegram_msg script {
+  position: relative;
+  top: 15%;
+  object-fit: cover;
+}
+
+#texture6 {
+  position: absolute;
+  width: 40vh;
+  top: 160vh;
+  left: 30%;
+  z-index: -1;
+}
+
+#texture7 {
+  position: absolute;
+  width: 20vh;
+  top: 100vh;
+  left: 50%;
+  z-index: -1;
+}
+
+#bot_continor {
+  height: 50vh;
+  width: 100vh;
+}
+
+.bot_list {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+}
+
+#texture8 {
+  width: 50%;
+}
+
+.flying {
+  width: 70vh;
+  padding-top: 15vh;
+}
+
+#girl {
+  position: relative;
+  left: 85vh;
+}
+
+#texture9 {
+  position: absolute;
+  left: 60%;
+  z-index: -1;
+}
+
+.bot-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90vh;
+  gap: 30px;
+  top: -60vh;
+  left: 12vh;
+}
+
+.bot-img {
+  width: 15vh;
+  border-radius: 25%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 1s ease, border-radius 1s ease;
+}
+
+.bot-img:hover {
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+
+#bot-title {
+  font-family: 'Caveat', cursive;
+  position: relative;
+  top: 25vh;
+  left: 6%;
+  font-size: 9vh;
+}
+
+#star {
+  position: relative;
+  width: 10vh;
+  left: 35%;
+  top: 7vh;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes textureAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#texture1,
+#texture2,
+#texture3,
+#texture6,
+#texture7 {
+  animation: textureAnimation 3s ease-in-out infinite;
+}
+
+@keyframes girlAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#girl {
+  animation: girlAnimation 3s ease-in-out infinite;
+}
